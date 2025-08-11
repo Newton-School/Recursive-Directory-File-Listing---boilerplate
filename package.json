@@ -1,12 +1,21 @@
+
 {
-  "name": "boilerplate",
+  "name": "node-20-with-mysql-runtime-boilerplate",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha '__tests__/*.js' --reporter mochawesome --recursive  --timeout 6000 --exit",
+    "start": "node src/index.js"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "mochawesome": "6.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "mocha": "^8.2.1"
+  }
 }
