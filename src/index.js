@@ -1,4 +1,4 @@
-const { listFilesAsync } = require("./explorer");
+const { listFilesAsync } = require("./explore");
 
 // Example 1: List all files inside ./src
 listFilesAsync("./", function (err, files) {
